@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0E5C89</color>
+    <color name="colorPrimaryDark">#0B496D</color>
+    <color name="colorAccent">#000000</color>
+    <color name="background">#F9F9F9</color>
+    <color name="transparentBackground">#50F9F9F9</color>
+    <color name="button_blue">#0E5C89</color>
+    <color name="chat_text">#1B1E1F</color>
+    <color name="chatUsername">#1B1E1F</color>
+    <color name="colorPrimaryLight">#36CEF4</color>
+    <color name="errorRed">#C0492C</color>
+    <color name="btn_disabled">#954993EE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="inputFieldColor">#1B1E1F</color>
+    <color name="appBarColor">#1B1E1F</color>
+    <color name="homeButtonsColor">#80F9F9F9</color>
+    <color name="statusBarColor">#0B496D</color>
+    <color name="bottomLine">#7B7B7E</color>
+    <color name="common_border_color">#EFEFEF</color>
+</resources>

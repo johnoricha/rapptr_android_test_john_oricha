@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: nl.dionsegijn:konfetti-core:2.0.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3e9876e26701214b021363242e577483/transformed/konfetti-core-2.0.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3e9876e26701214b021363242e577483/transformed/konfetti-core-2.0.2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/nl.dionsegijn/konfetti-core/2.0.2/72174546a380129323a5cf51d0b3b2d5bd98020d/konfetti-core-2.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
