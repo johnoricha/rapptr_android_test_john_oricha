@@ -8,21 +8,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="formTextFieldStyle">
-        <item name="android:textSize">12sp</item>
-        <item name="android:textStyle">normal</item>
-<!--        <item name="android:fontFamily">@font/interregular</item>-->
-<!--        <item name="android:textCursorDrawable">@drawable/color_cursor</item>-->
-        <item name="android:textColor">@color/colorPrimary</item>
-    </style>
-
-    <style name="formEditTextFieldStyle">
-        <item name="android:textSize">12sp</item>
-        <item name="android:textStyle">normal</item>
-<!--        <item name="android:fontFamily">@font/interregular</item>-->
-        <item name="maxLines">1</item>
-<!--        <item name="android:textCursorDrawable">@drawable/color_cursor</item>-->
-        <item name="android:lines">1</item>
+    <style name="EditTextTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/bottomLine</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
     </style>
 
 </resources>
