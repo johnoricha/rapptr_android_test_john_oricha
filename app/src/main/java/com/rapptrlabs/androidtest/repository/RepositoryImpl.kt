@@ -2,7 +2,7 @@ package com.rapptrlabs.androidtest.repository
 
 import com.google.gson.Gson
 import com.rapptrlabs.androidtest.api.ApiService
-import com.rapptrlabs.androidtest.features.chat.data.ChatMessageModel
+import com.rapptrlabs.androidtest.features.chat.data.ChatLogMessageModel
 import com.rapptrlabs.androidtest.features.login.data.LoginResponseDto
 import com.rapptrlabs.androidtest.features.login.data.LoginResponseModel
 import com.rapptrlabs.androidtest.util.Resource
@@ -15,14 +15,14 @@ import javax.inject.Inject
 class RepositoryImpl @Inject constructor(
     private val apiService: ApiService
 ) : Repository {
-    override suspend fun getChats(): Flow<Resource<List<ChatMessageModel>>> = flow {
+    override suspend fun getChats(): Flow<Resource<List<ChatLogMessageModel>>> = flow {
 
         emit(Resource.Loading())
 
         try {
             val apiData = apiService.getChatMessages().data
 
-            val chatMessages: List<ChatMessageModel> = apiData.map { it.toChatMessageModel() }
+            val chatMessages: List<ChatLogMessageModel> = apiData.map { it.toChatLogMessageModel() }
 
             emit(Resource.Success(data = chatMessages))
 

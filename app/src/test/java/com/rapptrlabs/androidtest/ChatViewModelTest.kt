@@ -1,8 +1,7 @@
 package com.rapptrlabs.androidtest
 
 import com.rapptrlabs.androidtest.features.chat.viewmodel.ChatViewModel
-import com.rapptrlabs.androidtest.features.chat.data.ChatMessageModel
-import com.rapptrlabs.androidtest.features.login.data.LoginResponseModel
+import com.rapptrlabs.androidtest.features.chat.data.ChatLogMessageModel
 import com.rapptrlabs.androidtest.repository.Repository
 import com.rapptrlabs.androidtest.util.Resource
 import kotlinx.coroutines.*
@@ -38,7 +37,7 @@ class ChatViewModelTest {
 
     @Before
     fun setup() {
-        closeable = MockitoAnnotations.openMocks(ChatViewModel::class.java);
+        closeable = MockitoAnnotations.openMocks(ChatViewModel::class.java)
         chatViewModel = ChatViewModel(repository)
         Dispatchers.setMain(mainThreadSurrogate)
 
@@ -57,19 +56,19 @@ class ChatViewModelTest {
     fun `test getChats function`(): Unit = runTest {
         val response = Resource.Success(
             listOf(
-                ChatMessageModel(
+                ChatLogMessageModel(
                     "1",
                     "avatar1",
                     "user1",
                     "message1"
                 ),
-                ChatMessageModel(
+                ChatLogMessageModel(
                     "2",
                     "avatar",
                     "user2",
                     "message2"
                 ),
-                ChatMessageModel(
+                ChatLogMessageModel(
                     "3",
                     "avatar3",
                     "user3",

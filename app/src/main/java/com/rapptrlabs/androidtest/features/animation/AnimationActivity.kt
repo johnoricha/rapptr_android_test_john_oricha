@@ -54,9 +54,6 @@ class AnimationActivity : AppCompatActivity() {
 
                 when (event?.actionMasked) {
 
-                    MotionEvent.ACTION_UP -> {
-
-                    }
                     MotionEvent.ACTION_DOWN -> {
 
                         x = event.rawX
@@ -72,7 +69,6 @@ class AnimationActivity : AppCompatActivity() {
                             this.x = this.x + dx
                             this.y = this.y + dy
                         }
-
 
                         x = event.rawX
                         y = event.rawY
@@ -96,7 +92,6 @@ class AnimationActivity : AppCompatActivity() {
         startActivity(intent)
         finishAffinity()
     }
-
 
     fun animateLogo() {
         val fadeOut = AlphaAnimation(1f, 0f)

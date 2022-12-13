@@ -2,9 +2,9 @@ package com.rapptrlabs.androidtest
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.rapptrlabs.androidtest.databinding.ActivityHomeBinding
 import com.rapptrlabs.androidtest.features.animation.AnimationActivity
 import com.rapptrlabs.androidtest.features.chat.ui.ChatActivity
-import com.rapptrlabs.androidtest.databinding.ActivityMainBinding
 import com.rapptrlabs.androidtest.features.login.ui.LoginActivity
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -14,13 +14,13 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class HomeActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityHomeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         title = getString(R.string.activity_main_title)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         /**

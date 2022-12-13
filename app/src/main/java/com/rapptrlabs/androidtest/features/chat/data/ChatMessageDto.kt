@@ -6,7 +6,7 @@ data class ChatMessageDto(
     val name: String,
     val user_id: String
 ) {
-    fun toChatMessageModel(): ChatMessageModel = ChatMessageModel(
+    fun toChatLogMessageModel(): ChatLogMessageModel = ChatLogMessageModel(
         userId = user_id,
         avatarUrl = avatar_url,
         username = name,

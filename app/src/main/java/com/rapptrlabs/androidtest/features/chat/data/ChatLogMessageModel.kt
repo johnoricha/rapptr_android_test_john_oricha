@@ -1,6 +1,6 @@
 package com.rapptrlabs.androidtest.features.chat.data
 
-data class ChatMessageModel(
+data class ChatLogMessageModel(
     val userId: String,
     val avatarUrl: String,
     val username: String,

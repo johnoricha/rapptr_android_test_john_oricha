@@ -9,9 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import coil.transform.CircleCropTransformation
 import com.rapptrlabs.androidtest.R
-import com.rapptrlabs.androidtest.features.chat.data.ChatMessageModel
+import com.rapptrlabs.androidtest.features.chat.data.ChatLogMessageModel
 
-class ChatAdapter(private var messages: List<ChatMessageModel> = mutableListOf()) : RecyclerView.Adapter<ChatAdapter.ChatViewHolder>() {
+class ChatAdapter(private var messages: List<ChatLogMessageModel> = mutableListOf()) : RecyclerView.Adapter<ChatAdapter.ChatViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatViewHolder {
         val itemView = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_chat, parent, false)
@@ -37,7 +37,7 @@ class ChatAdapter(private var messages: List<ChatMessageModel> = mutableListOf()
 
         }
 
-        fun bind(message: ChatMessageModel) {
+        fun bind(message: ChatLogMessageModel) {
 
             usernameTextView.apply {
                 text = message.username
@@ -54,7 +54,7 @@ class ChatAdapter(private var messages: List<ChatMessageModel> = mutableListOf()
         }
     }
 
-    fun setList(list: List<ChatMessageModel>) {
+    fun setList(list: List<ChatLogMessageModel>) {
         messages = list
         notifyDataSetChanged()
     }
