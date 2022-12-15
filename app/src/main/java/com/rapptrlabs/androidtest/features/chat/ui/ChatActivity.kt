@@ -11,6 +11,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.rapptrlabs.androidtest.HomeActivity
+import com.rapptrlabs.androidtest.R
 import com.rapptrlabs.androidtest.databinding.ActivityChatBinding
 import com.rapptrlabs.androidtest.features.chat.adapter.ChatAdapter
 import com.rapptrlabs.androidtest.features.chat.viewmodel.ChatViewModel
@@ -36,7 +37,7 @@ class ChatActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar?.apply {
-            title = "Chat"
+            title = getString(R.string.chat)
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
         }

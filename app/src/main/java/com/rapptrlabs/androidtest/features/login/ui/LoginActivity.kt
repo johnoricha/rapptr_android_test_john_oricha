@@ -44,7 +44,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener, TextWatcher {
         setContentView(binding.root)
 
         supportActionBar?.apply {
-            title = "Login"
+            title = getString(R.string.login)
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
         }

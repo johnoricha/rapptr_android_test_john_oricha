@@ -11,5 +11,8 @@
     <string name="forgot_password">forgot password</string>
     <string name="log_in">login</string>
     <string name="fade">Fade In</string>
+    <string name="animation">Animation</string>
+    <string name="chat">Chat</string>
+    <string name="login">Login</string>
 
 </resources>

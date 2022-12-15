@@ -9,6 +9,7 @@ import android.view.animation.AlphaAnimation
 import android.view.animation.Animation
 import androidx.appcompat.app.AppCompatActivity
 import com.rapptrlabs.androidtest.HomeActivity
+import com.rapptrlabs.androidtest.R
 import com.rapptrlabs.androidtest.databinding.ActivityAnimationBinding
 import dagger.hilt.android.AndroidEntryPoint
 import nl.dionsegijn.konfetti.core.Party
@@ -33,7 +34,7 @@ class AnimationActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar?.apply {
-            title = "Animation"
+            title = getString(R.string.animation)
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
         }
